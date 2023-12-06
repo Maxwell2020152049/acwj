@@ -10,8 +10,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "decl.h"
+/**
+ * note: the order of defs.h and decl.h can't be change
+ * warnings will happen if changed
+*/
 #include "defs.h"
+#include "decl.h"
 
 #define extern_
 #include "data.h"

@@ -10,4 +10,4 @@ main.o: main.c
 	gcc -c main.c
 
 clean:
-	rm scanner *.o
+	rm -f scanner *.o
