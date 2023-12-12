@@ -2,8 +2,8 @@
  * @Author: wanfeng 1505991024@qq.com
  * @Date: 2023-12-06 14:26:07
  * @LastEditors: wanfeng 1505991024@qq.com
- * @LastEditTime: 2023-12-08 15:15:03
- * @FilePath: /acwj/02_Parser/main.c
+ * @LastEditTime: 2023-12-12 15:25:28
+ * @FilePath: /acwj/03_Precedence/main.c
  * @Description: 
  */
 
@@ -35,7 +35,8 @@ void main(int argc, char* argv[]) {
     InFile = fopen(argv[1], "r");
 
     scan(&Token);
-    struct ASTnode *n = binary_expr();
+    // struct ASTnode *n = add_expr();
+    struct ASTnode *n = binary_expr(0);
 
     printf("%d\n", interpret_ast(n));
 
